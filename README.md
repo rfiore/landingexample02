@@ -24,9 +24,11 @@ For the Colored Box you have to use this API:
 
 https://jsonplaceholder.typicode.com/photos
 
-For retrieve Title and Images.
+For retrieve __Title__ and __Images__.
 
-We can filter the box with the Input Search.
+We can filter the box with the __Input Search__.
+
+---
 
 We need a Mobile Version like the Example:
 
