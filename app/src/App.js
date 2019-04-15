@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import style from './App.module.scss';
 
-import Products from './components/Products'
+import Products from './components/Products';
+import Header from './components/Header'
 
 class App extends Component {
   render() {
     return (
       <div className={style.App}>
-       <Products />
+				<Header />
+				<Products />
       </div>
     );
   }

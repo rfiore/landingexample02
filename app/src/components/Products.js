@@ -8,7 +8,7 @@ class Products extends Component {
 
 		this.state = {
 			products: [],
-			searchKeys: ['est', 'omins'],
+			searchKeys: [],
 			inputStr: ''
 		};
 
@@ -24,7 +24,6 @@ class Products extends Component {
 			console.log(this.state.searchKeys);
 		})
 	}
-
 
 	componentDidMount(){
 		let self = this;
@@ -45,8 +44,9 @@ class Products extends Component {
 		let productList = this.state.products.filter((item)=>{
 			let title = item.title;
 			let conditions = self.state.searchKeys;
+			let filterResult = self.state.inputStr === '' ? true : filterResult = conditions.some(key => title.includes(key));
 
-			return conditions.some(key => title.includes(key));
+			return filterResult
 		}).map((item)=>{
 			return (
 				<div key={item.id} className={style["col-md-4"]}>
@@ -59,8 +59,8 @@ class Products extends Component {
 		});
 
     return (
-      <div>
-				<h1>Products ({productList.length})</h1>
+      <div className={style.products}>
+				<h3>SHOP ({productList.length})</h3>
 				<div className={style.container}>
 					<div className={style.row}>
 						<div className={style["col-md-12"]}>
