@@ -1,0 +1,26 @@
+@import './variables.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+
+.App {
+  text-align: center;
+}
+
+.product {
+	position: relative;
+	padding-bottom: 30px;
+	display: inline-block;
+
+	&:hover {
+		opacity: .6;
+	}
+
+	h4 {
+		width: 100%;
+		padding: 0 10%;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		color: $primary-color;
+	}
+}
