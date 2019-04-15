@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import style from '../App.module.scss';
+import style from '../scss/App.module.scss';
 
 import qr from '../images/qr-code-lvr-ios-app-1024x1024.png';
 import appStore from '../images/CTA-App-Store.png';

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import style from '../App.module.scss';
+import style from '../scss/App.module.scss';
 
 class Products extends Component {
 
